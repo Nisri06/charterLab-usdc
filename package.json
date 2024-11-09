@@ -1,0 +1,27 @@
+{
+  "name": "my-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ my-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ my-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ my-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 my-subgraph",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "lodash.trim": "^4.5.1",
+    "lodash.trimend": "^4.5.1",
+    "request": "^2.88.2",
+    "tough-cookie": "^5.0.0",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.88.0",
+    "@graphprotocol/graph-ts": "^0.35.1",
+    "matchstick-as": "0.5.0"
+  }
+}
